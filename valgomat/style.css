@@ -4,5 +4,16 @@ body {
 
 #pp_logo {
     width: 75px;
-    margin-left: 25px
+    margin-left: 25p;
+    float: left;
+    position: absolute;
 }
+
+.sm-contain {
+    background-color: aliceblue;
+    width: 400px;
+    border: 15px blue;
+    padding: 90px;
+    margin-left: 400px;
+}
+
