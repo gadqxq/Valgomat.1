@@ -1,53 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    background-image: url(../Image/iStock-486896088-multigeneration\ -\ org.jpg);
+    background-size: cover;
+    font-family: 'Arial bold', Helvetica, sans-serif;
 }
+/*styler logo*/
 #pp_logo {
     width: 75px;
-    margin-left: 25p;
+    margin-left: 10px;
     float: left;
 }
+/*sørger for at valgomat header ikke beveger seg*/    
 #valgomat-header {
-    margin-bottom: 60px; 
-}
-.container {
-    width: 350px; /* Setter en fast bredde */
-    min-height: 300px; /* Setter en minimumshøyde for å plassere innhold */
+    margin-top: -175px;
     position: absolute;
-    top: 50%; /* Sentrerer vertikalt */
-    left: 50%; /* Sentrerer horisontalt */
-    transform: translate(-50%, -50%); /* Sentrerer container */
+}
+/*styler valgomat div*/
+.container {
+    width: 350px;
+    min-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #98acdb;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 10px;
-    background-color: #f5f5f5;
+    background-color: #8ba1d3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+/*velger hvor startknappen er*/ 
 button {
-    margin-top: 10px;
+    margin-top: 110px;
 }
+/*Gjør resultat bold og endrer tekst størrelse*/
 #result {
     margin-top: 20px;
     font-weight: bold;
 }
-#quiz-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
-}
+/*sentrerer next button*/
 #next-button {
     display: block;
     margin: 0 auto;
 }
-#quiz-questions {
-    max-height: 150px; /* Setter en fast maksimumshøyde for spørsmålene */
+/*styler knappene*/    
+.stylebutton {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px; 
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
 }
+/*hover effekt button*/    
+.stylebutton:hover,
+.stylebutton:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+/*style for når du kan klikke knappen*/    
+.stylebutton:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+/*style for når du ikke kan klikke knappen*/    
+.stylebutton:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+/*Setter radio opptions på rekke og rad*/    
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:5px;
+}
+ /*font størrelse + tekst senterering*/   
+.radio-option label {
+    text-align: center;
+    font-size:15px;
+}     

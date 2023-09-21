@@ -7,16 +7,22 @@
     <title>Valgomat</title>
 </head>
 <body>
-<img src="../Image/logo.png" alt="pp" id="pp_logo">
-<div class="container">
-    <h1 id="valgomat-header">Valgomat</h1>
-    <button id="start-button">Start Valgomat</button>
-    <form id="quiz-form">
-        <div id="quiz-questions"></div>
-        <button type="submit" id="next-button" role="button" style="display: none;" disabled>Neste</button>
-    </form>
-    <div id="result" style="display: none;"></div>
-</div>
+    <!-- Logo som linker til ekstern nettside -->
+    <a href="index.html"><img src="../Image/logo.png" alt="pp" id="pp_logo"></a>
+    <div class="container">
+        <!-- Overskrift for valgomaten -->
+        <h1 id="valgomat-header">Valgomat</h1>
+        <!-- Knapp for å starte valgomaten -->
+        <button id="start-button" class="stylebutton">Start Valgomat</button>
+        <form id="quiz-form">
+            <!-- Container for spørsmål og svaralternativer -->
+            <div id="quiz-questions"></div>
+            <!-- Knapp for å gå til neste spørsmål -->
+            <button type="submit" id="next-button" class="stylebutton" role="button" style="display: none;" disabled>Neste</button>
+        </form>
+        <!-- Viser resultatet av valgomaten (skjult som standard) -->
+        <div id="result" style="display: none;"></div>
+    </div>
 <script src="../Js/valgo.js"></script>
 </body>
 </html>
